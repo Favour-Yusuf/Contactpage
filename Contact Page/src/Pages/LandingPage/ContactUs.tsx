@@ -7,6 +7,9 @@ import {
 } from "react-icons/md";
 
 const ContactUs: React.FC = () => {
+  // const [fullName, setFullname] = React.useState("")
+  // const [email, setEmail] = React.useState("")
+  // const [message, setMessage] = React.useState("")
   return (
     <Container>
       <Wrapper>
@@ -33,11 +36,7 @@ const ContactUs: React.FC = () => {
           <FullName placeholder="FullName"></FullName>
           <Email placeholder="Email"></Email>
           <Message placeholder="Message...."></Message>
-          <Button2 cp="pointer" bg="black">
-            Submit
-          </Button2>
-          ) : (
-          <Button2 cp="not-allowed" bg="silver">
+          <Button2 cp="pointer" bg="#892be2b7">
             Submit
           </Button2>
         </Form>
@@ -52,6 +51,9 @@ const Button2 = styled.div<{ bg: string; cp: string }>`
   height: 40px;
   width: 150px;
   background-color: ${(props) => props.bg};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   color: white;
   border: none;
@@ -113,7 +115,7 @@ const Icon = styled.div`
   font-size: 80px;
   color: #892be2b7;
   display: flex;
-  border-bottom: 20px;
+  margin-bottom: 50px;
   p {
     font-size: 20px;
     color: #363636;

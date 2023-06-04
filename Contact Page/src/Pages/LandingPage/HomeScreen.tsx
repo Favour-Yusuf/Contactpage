@@ -8,6 +8,8 @@ const HomeScreen: React.FC = () => {
     <div>
       <Hero />
       <ReasonsToContactUS />
+      <br />
+      <br />
       <ContactUs />
     </div>
   );

@@ -26,6 +26,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  border-radius: 5px;
 `;
 
 const Heading = styled.div`

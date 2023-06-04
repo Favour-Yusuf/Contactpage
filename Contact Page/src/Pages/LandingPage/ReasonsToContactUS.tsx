@@ -30,9 +30,9 @@ export default ReasonsToContactUS;
 
 const Heading = styled.div`
   p {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800;
-    color: #8a2be2;
+    color: #892be2dc;
   }
 `;
 const Wrapper = styled.div`

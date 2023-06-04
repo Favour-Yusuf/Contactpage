@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../../assets/contactUs.avif";
+import fb from "../../assets/facebooklogo.png";
+import twitter from "../../assets/twitter.png";
+import insta from "../../assets/instagram-removebg-preview.png";
+import link from "../../assets/linkedIn.webp";
 
 const Hero: React.FC = () => {
   return (
@@ -15,12 +19,46 @@ const Hero: React.FC = () => {
             hesitate to get in touch. We're here to listen and assist.
           </p>
         </WelcomeMessage>
+        <SocialMedia>
+          <Icon>
+            <FB src={fb} />
+            <Twit src={twitter} />
+            <Insta src={insta} />
+            <Link src={link} />
+          </Icon>
+        </SocialMedia>
       </Black>
     </Container>
   );
 };
 
 export default Hero;
+
+const FB = styled.img`
+  height: 30px;
+`;
+const Twit = styled.img`
+  height: 30px;
+`;
+const Insta = styled.img`
+  height: 40px;
+`;
+const Link = styled.img`
+  height: 50px;
+`;
+
+const Icon = styled.div`
+  display: flex;
+  width: 300px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+`;
+
+const SocialMedia = styled.div`
+  margin-top: 50px;
+`;
 
 const Black = styled.div`
   position: absolute;
