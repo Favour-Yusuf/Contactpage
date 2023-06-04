@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import logo from "../../assets/Lyfecare white.png";
 
 const Header: React.FC = () => {
   const [show, setShow] = useState(false);
@@ -36,7 +37,7 @@ const Header: React.FC = () => {
       >
         <Wrapper>
           <NavLink style={{ textDecoration: "none", color: "white" }} to="/">
-            <Logo src="/images/lyfeCareLogo.jpg" />
+            <Logo src={logo} />
           </NavLink>
 
           <Navigations>
