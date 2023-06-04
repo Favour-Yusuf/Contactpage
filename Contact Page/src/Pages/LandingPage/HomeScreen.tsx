@@ -1,12 +1,14 @@
 import React from "react";
 import { Hero } from ".";
-import CardProps from "./CardProps";
+import ReasonsToContactUS from "./ReasonsToContactUS";
+import ContactUs from "./ContactUs";
 
 const HomeScreen: React.FC = () => {
   return (
     <div>
       <Hero />
-      <CardProps />
+      <ReasonsToContactUS />
+      <ContactUs />
     </div>
   );
 };

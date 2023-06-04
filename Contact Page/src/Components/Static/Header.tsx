@@ -373,6 +373,7 @@ const Container = styled.div<{ bg: string }>`
   background-color: ${(props) => props.bg};
   position: fixed;
   z-index: 100;
+  top: 0;
 
   @media (max-width: 510px) {
     height: 65px;
